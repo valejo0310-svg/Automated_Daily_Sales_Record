@@ -7,7 +7,7 @@ def sales_record():
 
     amount = input("\nDo you wish to add new purchases? (s/n): ")
 
-    while amount.lower() in ["s" , "si"]:
+    while amount.lower() in ["s" , "si", "Si" , "SI"]:
 
         product = input("\nIntroduce the product to purchase: ")
         price = float(input("Introduce the price: "))
