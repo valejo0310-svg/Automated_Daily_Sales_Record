@@ -1,15 +1,15 @@
 from time import sleep
-from Calculator import registrar_ventas
-from Show_message import mostrar_resumen
+from Calculator import sales_record
+from Show_message import show_record 
 
 
 
-
+#Function main used to call all the other fuctions 
 def main():
 
     welcome = """
 ╔════════════════════════════════════════════════════════════╗
-        WELCOME TO THE SALES RECORD RIWI STORE!!
+        WELCOME TO THE SALES RECORD, RIWI STORE!!
 ╚════════════════════════════════════════════════════════════╝
 """
 
@@ -17,14 +17,17 @@ def main():
         print(i, end="", flush=True)
         sleep(0.0005)
 
-
+#Loop while to make a confirmation for the sell
     continuar = "s"
 
     while continuar.lower() == "s":
-        registrar_ventas()
-        continuar = input("¿Desea registrar otra venta? (s/n): ")
-
-    mostrar_resumen()
+        sales_record()
+        continuar = input("Do you want to register this new sell? (s/n): ")
+        if continuar == "si":
+            show_record()
+        else: 
+            print ("Sell canceled.")
+            exit()
 
 
 main()
