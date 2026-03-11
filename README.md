@@ -14,3 +14,6 @@ The system was developed using the following language:
 The project is organized using a modular structure to improve readability and maintainability.
 
 For this project it was need to use: functions, while and for loops, list and dictionarys that would allow the program to run efficiently. 
+
+## Flowchart for the Sales Record Sistem.
+![Flowchart](https://github.com/user-attachments/assets/52cbdaeb-d625-438d-a561-3459a7ff94de)
