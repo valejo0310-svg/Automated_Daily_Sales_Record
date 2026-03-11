@@ -1,14 +1,15 @@
-from Calculator import calcular_total, ventas
-def mostrar_resumen():
+from Calculator import calculate_total, sells
+#Show the record of the purchase
+def show_record():
 
     print("="*60)
     print("TOTAL PURCHASE".center(60))
     print("="*60)
+#This part allows all that was added on the dictionary be shown here
 
-    for venta in ventas:
-        print("Producto:", venta["producto"])
-        print("Cantidad vendida:", venta["cantidad"])
-        print()
-
-    total = calcular_total()
-    print("Total recaudado: $", total)
+    for sell in sells:
+        print("Product:", sell["product"])
+        print("Quantity sold:", sell["quantity"])
+        
+    total = calculate_total()
+    print("Final amount: $", total)
