@@ -18,9 +18,9 @@ def main():
         sleep(0.0005)
 
 #Loop while to make a confirmation for the sell
-    continuar = "s"
+    continuar = "si"
 
-    while continuar.lower() == "s":
+    while continuar.lower() == "si":
         sales_record()
         continuar = input("Do you want to register this new sell? (s/n): ")
         if continuar == "si":
